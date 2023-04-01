@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# 💖💖💖
+# App.jsx File
+import Pxl,{ value,price } from "./Pxl";    👉Use Multiple Modules Like This
+👉Here Pxl is a Defult Function
+{value}
+{price()}  👉We Can Call a Function Like This
+
+# another File 🙆‍♂️👻
+let value= 199;
+function price(){
+    return value;
+}
+export {value,price}
+
+# We Can Use Like This😍
+
+import * as xl from "./Pxl";
+            👉{xl.price()}
+            👉{xl.default}
+
